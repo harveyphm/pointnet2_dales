@@ -63,6 +63,7 @@ RUN apt-get update &&  apt-get install -y \
     vim \
     sudo \
     git \
+    wget \
     bzip2 \
     libx11-6 \
  && rm -rf /var/lib/apt/lists/*
@@ -88,9 +89,6 @@ RUN chmod 777 /home/user
 # && rm ~/miniconda.sh
 #ENV PATH=/home/user/miniconda/bin:$PATH
 #ENV CONDA_AUTO_UPDATE_CONDA=false
-
-RUN apt-get install -y wget 
-RUN apt-get install bzip2 
 
 RUN wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 RUN bash Anaconda3-5.0.1-Linux-x86_64.sh -b
