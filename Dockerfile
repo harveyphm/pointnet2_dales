@@ -82,12 +82,22 @@ ENV HOME=/home/user
 RUN chmod 777 /home/user
 
 # Install Miniconda.
-RUN curl -so ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh \
- && chmod +x ~/miniconda.sh \
- && ~/miniconda.sh -b -p ~/miniconda \
- && rm ~/miniconda.sh
-ENV PATH=/home/user/miniconda/bin:$PATH
-ENV CONDA_AUTO_UPDATE_CONDA=false
+#RUN curl -so ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh \
+# && chmod +x ~/miniconda.sh \
+# && ~/miniconda.sh -b -p ~/miniconda \
+# && rm ~/miniconda.sh
+#ENV PATH=/home/user/miniconda/bin:$PATH
+#ENV CONDA_AUTO_UPDATE_CONDA=false
+
+RUN wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+RUN bash Anaconda3-5.0.1-Linux-x86_64.sh -b
+RUN rm Anaconda3-5.0.1-Linux-x86_64.sh
+
+ENV PATH /root/anaconda3/bin:$PATH
+
+RUN conda update conda
+RUN conda update anaconda
+RUN conda update --all
 
 # Create a Python 3.6 environment.
 RUN /home/user/miniconda/bin/conda install conda-build \
