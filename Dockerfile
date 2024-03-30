@@ -86,9 +86,9 @@ RUN rm Anaconda3-5.0.1-Linux-x86_64.sh
 
 ENV PATH /root/anaconda3/bin:$PATH
 
-RUN sudo conda update conda
-RUN sudo conda update anaconda
-RUN sudo conda update --all
+RUN conda update conda
+RUN conda update anaconda
+RUN conda update --all
 
 # Create a non-root user and switch to it.
 RUN adduser --disabled-password --gecos '' --shell /bin/bash user \
