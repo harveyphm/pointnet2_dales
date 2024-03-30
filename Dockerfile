@@ -96,9 +96,9 @@ RUN rm Anaconda3-5.0.1-Linux-x86_64.sh
 
 ENV PATH /root/anaconda3/bin:$PATH
 
-RUN conda update conda
-RUN conda update anaconda
-RUN conda update --all
+RUN sudo conda update conda
+RUN sudo conda update anaconda
+RUN sudo conda update --all
 
 # Create a Python 3.6 environment.
 RUN /home/user/miniconda/bin/conda install conda-build \
