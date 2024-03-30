@@ -96,7 +96,7 @@ RUN curl -so ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-lates
  && chmod +x ~/miniconda.sh \
  && ~/miniconda.sh -b -p ~/miniconda \
  && rm ~/miniconda.sh
-ENV PATH=/home/user/miniconda3/bin:$PATH
+ENV PATH=~/miniconda/bin:$PATH
 ENV CONDA_AUTO_UPDATE_CONDA=false
 
 # Create a non-root user and switch to it.
@@ -110,11 +110,11 @@ ENV HOME=/home/user
 RUN chmod 777 /home/user
 
 # Create a Python 3.6 environment.
-RUN /home/user/miniconda3/bin/conda install conda-build \
- && /home/user/miniconda3/bin/conda create -y --name py36 python=3.6.5 \
- && /home/user/miniconda3/bin/conda clean -ya
+RUN ~/miniconda/bin/conda install conda-build \
+ && ~/miniconda/bin/conda create -y --name py36 python=3.6.5 \
+ && ~/miniconda/bin/conda clean -ya
 ENV CONDA_DEFAULT_ENV=py36
-ENV CONDA_PREFIX=/home/user/miniconda3/envs/$CONDA_DEFAULT_ENV
+ENV CONDA_PREFIX=~/miniconda/envs/$CONDA_DEFAULT_ENV
 ENV PATH=$CONDA_PREFIX/bin:$PATH
 
 # CUDA 10.0-specific steps.
