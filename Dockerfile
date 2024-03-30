@@ -22,6 +22,9 @@ ENV NCCL_VERSION 2.4.8
 ENV CUDA_PKG_VERSION 10-1=$CUDA_VERSION-1
 ENV CUDNN_VERSION 7.6.5.32
 
+RUN apt-key del 7fa2af80
+RUN apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/3bf863cc.pub
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-cudart-$CUDA_PKG_VERSION \
         cuda-compat-10-1 && \
