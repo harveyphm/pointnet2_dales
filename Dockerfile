@@ -98,7 +98,6 @@ RUN curl -so ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-lates
  && rm ~/miniconda.sh
 ENV PATH=~/miniconda/bin:$PATH
 RUN export PATH=~/miniconda/bin:$PATH
-RUN source ~/.bashrc
 ENV CONDA_AUTO_UPDATE_CONDA=false
 
 # Create a non-root user and switch to it.
