@@ -81,6 +81,7 @@ RUN apt-get update &&  apt-get install -y \
     vim \
     sudo \
     git \
+    wget \
     bzip2 \
     libx11-6 \
  && rm -rf /var/lib/apt/lists/*
@@ -88,6 +89,14 @@ RUN apt-get update &&  apt-get install -y \
 # Create a working directory.
 RUN mkdir /app
 WORKDIR /app
+
+# Install Miniconda.
+RUN curl -so ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+ && chmod +x ~/miniconda.sh \
+ && ~/miniconda.sh -b -p ~/miniconda \
+ && rm ~/miniconda.sh
+ENV PATH=/home/user/miniconda/bin:$PATH
+ENV CONDA_AUTO_UPDATE_CONDA=false
 
 # Create a non-root user and switch to it.
 RUN adduser --disabled-password --gecos '' --shell /bin/bash user \
@@ -98,14 +107,6 @@ USER user
 # All users can use /home/user as their home directory.
 ENV HOME=/home/user
 RUN chmod 777 /home/user
-
-# Install Miniconda.
-RUN curl -so ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
- && chmod +x ~/miniconda.sh \
- && ~/miniconda.sh -b -p ~/miniconda \
- && rm ~/miniconda.sh
-ENV PATH=/home/user/miniconda/bin:$PATH
-ENV CONDA_AUTO_UPDATE_CONDA=false
 
 # Create a Python 3.6 environment.
 RUN /home/user/miniconda/bin/conda install conda-build \
