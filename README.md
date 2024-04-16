@@ -1,1 +1,1 @@
-# Pointnet++ with Pytorch Geometry
+# Pointnet++ Segmetation on DALES dataset with Pytorch Geometry
