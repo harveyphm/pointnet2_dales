@@ -6,8 +6,8 @@
 # Pointnet++ Segmetation on DALES dataset with Pytorch Geometry
 
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9-or?logo=python" alt="python"></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Pytoch-3.9-or?logo=PyTorch" alt="python"></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/PyG-3.9-or?logo=PyG" alt="python"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Pytoch-2.2.1-or?logo=PyTorch" alt="Pytorch"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/PyG-2.5.3-or?logo=PyG" alt="TorchGeometric"></a>
 
 <!--
 ARXIV   
