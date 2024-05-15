@@ -11,8 +11,6 @@
  
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
 
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
