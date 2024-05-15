@@ -16,7 +16,8 @@ This project aims to leverage [PointNet++](https://arxiv.org/pdf/1706.02413), a 
 
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
-The results obtained as below:
+The pretrained model is train with 39 epoches on the total of 60 millions points using Adam optimizer with fixed learning rate of 0.001. 
+Then, the model is evaluated on the test dataset which consist of around 22 millions points.
 
 | Tile size | Metrics | Ground | Vegetation | Car  | Truck | Powerline | Fence | Poles | Building | OA  |
 |-----------|---------|--------|------------|------|-------|-----------|-------|-------|----------|-----|
