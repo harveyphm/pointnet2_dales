@@ -11,6 +11,8 @@
  
 </div>
 
+This project aims to leverage [PointNet++](https://arxiv.org/pdf/1706.02413), a successor of [PointNet](https://arxiv.org/abs/1612.00593) to perform semantic segmentation on point cloud obtain form Airborne Laser Scanner (ALS) such as DALES dataset using [Pytorch](https://pytorch.org/) and [Pytorch Geometrics](https://pyg.org/).
+
 
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
