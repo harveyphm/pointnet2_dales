@@ -5,6 +5,8 @@
  
 # PyTorch Pointnet++ Segmetation on DALES dataset
 
+<img src="img/prediction_results.png" alt="demo" width="700" height="300">
+
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.9-or?logo=python" alt="python"></a>
 <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/Pytoch-2.2.1-or?logo=PyTorch" alt="Pytorch"></a>
 <a href="https://pyg.org/"><img src="https://img.shields.io/badge/PyG-2.5.3-or?logo=PyG" alt="TorchGeometric"></a>
