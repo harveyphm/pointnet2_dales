@@ -16,6 +16,18 @@ This project aims to leverage [PointNet++](https://arxiv.org/pdf/1706.02413), a 
 
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
+The results obtained as below:
+
+| Tile size | Metrics | Ground | Vegetation | Car  | Truck | Powerline | Fence | Poles | Building | OA  |
+|-----------|---------|--------|------------|------|-------|-----------|-------|-------|----------|-----|
+| 15x15     | Precision | 0.93 | 0.93       | 0.39 | 0.18  | 0         | 0     | 0     | 0.81     | 0.9 |
+|           | Recall    | 0.95 | 0.87       | 0.08 | 0.2   | 0         | 0     | 0     | 0.88     |     |
+|           | IOU       | 0.94 | 0.9        | 0.132| 0.103 | 0         | 0     | 0     | 0.73     |     |
+| 25x25     | Precision | 0.91 | 0.938      | 0.18 | 0.1   | 0         | 0     | 0     | 0.49     | 0.85|
+|           | Recall    | 0.87 | 0.87       | 0.2  | 0.2   | 0         | 0     | 0     | 0.6      |     |
+|           | IOU       | 0.8  | 0.82       | 0.103| 0.1   | 0         | 0     | 0     | 0.43     |     |
+
+
 
 <!-- DATASET -->
 ## Dataset
