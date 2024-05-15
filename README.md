@@ -15,8 +15,26 @@
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
 
-<!-- Data set -->
+<!-- DATASET -->
 ## Dataset
+
+DALES dataset was collected by University of Daytons using a Riegl Q1560 dualchannel. The entire aerial LiDAR collection spanned $330 km^2$ over the City of Surrey in British Columbia, Canada. However, only $10 km^2$ of data has labels. 
+
+The dataset consist of 505 millions points which places it at the biggest dataset for ALS at that time.
+
+There are 8 categories, labelled as follow:
+- 0: Unknowns
+- 1: Ground
+- 2: Vegetation
+- 3: Cars
+- 4: Truck 
+- 5: Power line
+- 6: Fences
+- 7: Poles
+- 8: Building
+
+For more information about DALES dataset, please visit this [site](https://udayton.edu/engineering/research/centers/vision_lab/research/was_data_analysis_and_processing/dale.php)
+
 <!-- GETTING STARTED -->
 ## Setup 
 
