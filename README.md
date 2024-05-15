@@ -12,22 +12,22 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-# About The Project
+## About The Project
 
 <img src="img/prediction_results.png" alt="demo" width="900" height="400">
 
 
 <!-- GETTING STARTED -->
-# Setup
+## Setup
 
 <!-- USAGE -->
-# Usage
+## Usage
 
 <!-- ROADMAP -->
-# Roadmap
+## Roadmap
 
 <!-- CONTRIBUTING -->
-# Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -39,13 +39,13 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-# License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- Authors -->
-# Authors
+## Author
 
 Harvey Pham 
 [@Linkedin](https://www.linkedin.com/in/harveyphm/) 
@@ -54,8 +54,8 @@ Email: qhuy.phm@gmail.com
 
 
 <!-- ACKNOWLEDGEMENTS -->
-# Acknowledgements
+## Acknowledgements
 
 
-# Thank you
+## Thank you
 
