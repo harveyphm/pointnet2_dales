@@ -5,13 +5,12 @@
  
 # Pointnet++ Segmetation on DALES dataset with Pytorch Geometry
 
-<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-2.2.1?logo=PyTorch" alt="torch"></a>
-<a href="https://pyg.org/"><img src="https://img.shields.io/badge/PyG-2.5.3?logo=PyG" alt="pyg"></a>
+<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-2.2.1or?logo=PyTorch" alt="torch"></a>
+<a href="https://pyg.org/"><img src="https://img.shields.io/badge/PyG-2.5.3or?logo=PyG" alt="pyg"></a>
 <!--
 ARXIV   
 [![Paper](http://img.shields.io/badge/arxiv-math.co:1480.1111-B31B1B.svg)](https://www.nature.com/articles/nature14539)
 -->
-![CI testing](https://github.com/PyTorchLightning/deep-learning-project-template/workflows/CI%20testing/badge.svg?branch=master&event=push)
 
 <!--  
 Conference   
