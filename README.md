@@ -25,10 +25,10 @@
 # Usage
 
 <!-- ROADMAP -->
-## Roadmap
+# Roadmap
 
 <!-- CONTRIBUTING -->
-## Contributing
+# Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -48,7 +48,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- Authors -->
 # Authors
 
-Harvey Pham - [@Linkedin](https://www.linkedin.com/in/harveyphm/) - qhuy.phm@gmail.com
+Harvey Pham 
+[@Linkedin](https://www.linkedin.com/in/harveyphm/) 
+Email: qhuy.phm@gmail.com
 
 
 
